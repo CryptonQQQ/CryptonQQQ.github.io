@@ -18,7 +18,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/02/12/%E5%8C%BA%E5%9D%97%E9%93%BE/image-20200212105608083.png">
 <meta property="og:image" content="http://yoursite.com/2020/02/12/%E5%8C%BA%E5%9D%97%E9%93%BE/image-20200212110216619.png">
 <meta property="article:published_time" content="2020-02-12T03:15:14.312Z">
-<meta property="article:modified_time" content="2020-02-12T04:01:27.419Z">
+<meta property="article:modified_time" content="2020-02-12T04:33:09.262Z">
 <meta property="article:author" content="Qian Kai">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/2020/02/12/%E5%8C%BA%E5%9D%97%E9%93%BE/image-20200212105608083.png">
@@ -220,7 +220,7 @@
 <h3 id="3-写创世区块genesis-json文件"><a href="#3-写创世区块genesis-json文件" class="headerlink" title="3 写创世区块genesis.json文件"></a>3 写创世区块genesis.json文件</h3><p><code>$ vim genesis.json</code></p>
 <p>像这里我就拿第2步得到的f2ed4950634f9354927dccf1dcfcd0584c69d4bb和a20261b8bda36c17ba9020cc852a73aaf424bc52两个账户写到创世区块中</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;config&quot;: &#123;</span><br><span class="line">    &quot;chainId&quot;: 1024,</span><br><span class="line">    &quot;homesteadBlock&quot;: 0,</span><br><span class="line">    &quot;eip155Block&quot;: 0,</span><br><span class="line">    &quot;eip158Block&quot;: 0</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;alloc&quot;      : &#123;</span><br><span class="line">    &quot;f2ed4950634f9354927dccf1dcfcd0584c69d4bb&quot;: &#123;&quot;balance&quot;: &quot;100000000000000000000&quot;&#125;,</span><br><span class="line">    &quot;a20261b8bda36c17ba9020cc852a73aaf424bc52&quot;: &#123;&quot;balance&quot;: &quot;1000000000000000000&quot;&#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;coinbase&quot;   : &quot;0x0000000000000000000000000000000000000000&quot;,</span><br><span class="line">  &quot;difficulty&quot; : &quot;0x400&quot;,</span><br><span class="line">  &quot;extraData&quot;  : &quot;&quot;,</span><br><span class="line">  &quot;gasLimit&quot;   : &quot;0x2fefd8&quot;,</span><br><span class="line">  &quot;nonce&quot;      : &quot;0x0000000000000000&quot;,</span><br><span class="line">  &quot;mixhash&quot;    :</span><br><span class="line">  &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,</span><br><span class="line">  &quot;parentHash&quot; :</span><br><span class="line">  &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,</span><br><span class="line">  &quot;timestamp&quot;  : &quot;0x00&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<p> 初始化创世区块<br> <code>$ geth --datadir data init genesis.json</code></p>
 <h3 id="4-启动"><a href="#4-启动" class="headerlink" title="4 启动"></a>4 启动</h3><p><code>geth --datadir data0 --rpc --rpcapi db,eth,net,web3,personal,web3 --rpcaddr 0.0.0.0 --rpcport 8545 --datadir data0 --port 30303 --nodiscover --unlock 0xf2ed4950634f9354927dccf1dcfcd0584c69d4bb console</code></p>
 <p><img src="/2020/02/12/%E5%8C%BA%E5%9D%97%E9%93%BE/image-20200212110216619.png" alt="image-20200212110216619"></p>
 <p>到此为止 以太坊搭建成功！</p>
@@ -241,13 +241,13 @@
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/wechart.png">
+                      <img class="reward-img" src="/assets/img/ali.png">
                       <span class="reward-type">支付宝</span>
                     </div>
                     
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/ali.png">
+                      <img class="reward-img" src="/assets/img/wechart.png">
                       <span class="reward-type">微信</span>
                     </div>
                     
@@ -493,7 +493,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="https://mr-syc.github.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>大儿子链接</a>
             </li>
           
             <li class="search-li">
@@ -524,7 +524,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">南邮小硕一枚&lt;br&gt;&lt;br&gt;喜欢瞎倒腾&lt;br&gt;谢谢大家</div>
   	  	
     	</section>
     
